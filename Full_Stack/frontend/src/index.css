@@ -1,0 +1,19 @@
+#root,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,33 @@
+In your project, "Engagement Prediction" refers to using historical data of employee engagement—such as time spent on learning modules, quiz scores, participation in discussions, and feedback—to predict their future engagement levels. By identifying trends in this data, you can forecast whether an employee is likely to remain engaged or if their participation might drop.
+
+
+
+
+Engagement Prediction
+1. time spent on learning modules
+2. quiz scores
+3. participation in discussions
+4. feedback
+
+
+To predict Employee future engagement levels
+
+
+This allows HR to take proactive measures by:
+- Identifying employees at risk of disengagement.
+- Creating personalized strategies to boost engagement, like recommending specific courses, offering additional support, or recognizing accomplishments.
+- Improving overall learning outcomes by adapting the learning environment based on predicted engagement levels. 
+- These predictions enable HR to be more effective in ensuring that employees stay motivated and engaged in their learning journey.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+EmployeeID              | Department            | Team        	        (Employee Table)
+ParticipationRate       | LastEngagementDate    | EngagementFrequency	(Discussion)
+AverageFeedbackRating   | CourseType	        | EngagementLevel       (Feedback)
+TotalEngagementTime     | AverageEngagementTime                         (Engagement Table)
+NumberOfQuizzesTaken    | AverageQuizScore                              (Enrollment)
+NumberOfCoursesCompleted|                                               (Enrollment Table)
+
+level = 1

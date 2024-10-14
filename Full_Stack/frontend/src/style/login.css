@@ -1,0 +1,98 @@
+.LoginSignUpContainer {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 101;
+  }
+  .LoginSignUpContainer img{
+    width: 60%;
+  }
+  
+  /* Style for the container */
+  .login-container {
+    /* max-width: 400px; Maximum width of the form container */
+    /* margin: 0 auto; Center the form horizontally */
+    padding: 20px; /* Padding inside the container */
+    /* border: 1px solid #ddd;  */
+    border-radius: 8px; /* Rounded corners */
+    width: 25%;
+    /* background-color: #f9f9f9; Light background color */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+  }
+  
+  /* Style for the heading */
+  .login-container h2 {
+    text-align: center; 
+    color: #333; /* Darker text color */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Style for form elements */
+  .login-container form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+  }
+  
+  /* Style for each form group */
+  .login-container div {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  /* Style for labels */
+  .login-container label {
+    display: block; /* Make labels block-level elements */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+    color: #555; /* Slightly lighter text color */
+  }
+  
+  /* Style for inputs */
+  .login-container input {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Style for the submit button */
+  .login-container button {
+    background-color: black; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  /* Style the button on hover */
+  .login-container button:hover {
+    background-color: green; /* Darker blue background on hover */
+  }
+  
+  /* Style for the registration link */
+  .login-container p {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the paragraph */
+  }
+  
+  .login-container a {
+    color: green; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

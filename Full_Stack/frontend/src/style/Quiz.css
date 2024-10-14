@@ -1,0 +1,127 @@
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  color: black;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  /* text-align: center; */
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Quiz Question Box */
+.question-box {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* background-color: #211b1b; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.option-label:hover {
+  background-color: #797e81;
+}
+
+.option-label input[type="radio"] {
+  display: none;
+}
+
+.option-label .radio-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e0;
+  margin-right: 12px;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.option-label input[type="radio"]:checked + .radio-button {
+  background-color: green;
+  border-color: green;
+}
+
+.option-label span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Submit Button */
+.submit-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: green;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 16px;
+}
+
+.submit-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Result Box */
+.result-box {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* background-color: #020202; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.correct {
+  color: #48bb78;
+}
+
+.incorrect {
+  color: #f56565;
+}
+
+.score-box {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* background-color: #060606; */
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}

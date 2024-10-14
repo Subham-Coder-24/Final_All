@@ -1,0 +1,41 @@
+
+.admin_card img{
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+}
+.parent_card {
+  margin-top: 5rem;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: white;
+}
+
+.card {
+  background-color: #575757;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 220px;
+  height: 100px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.admin_card{
+  text-align: center;
+}

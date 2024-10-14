@@ -1,0 +1,20 @@
+# Python virtual environment
+myenv/
+
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Environment configuration files
+.env
+
+# Log files
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Miscellaneous files
+*.DS_Store        # macOS
+*.egg-info/
+*.zip

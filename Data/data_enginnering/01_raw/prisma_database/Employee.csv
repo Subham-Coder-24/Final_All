@@ -1,0 +1,17 @@
+EmployeeID ,Name   ,Email            ,Department      ,Role  ,Password                                                     ,Team
+         3 ,abhi   ,abhi@gmail.com   ,Engineering     ,User  ,$2a$10$.wfhBabkbBwnBl7qIevkiutSVp7MOjgUcRCg2UjRIRoj89F6IvyLm ,Frontend Development Team
+         4 ,rakesh ,rakesh@gmail.com ,Engineering     ,User  ,$2a$10$T4SqncGDmSlzjlmzEgkhk.UTS3ydDUaZ19Usynjm3A0YIovNp6N5i ,Frontend Development Team
+         5 ,sai    ,sai@gmail.com    ,Sales           ,User  ,$2a$10$GL0oJsSPzsLrMJTjNmEagOcxCODO9IUlMAXQJFtIG/hS3ihGk2cHq ,Inside Sales Team
+         6 ,vishal ,vishal@gmail.com ,Human Resources ,User  ,$2a$10$WXuL/9MZ6vkI4e2E0ELiGuD3SRDugAxdAvQAv68e7e1vw2WglcSyq ,Recruitment Team
+         7 ,sumi   ,sumi@gmail.com   ,Engineering     ,User  ,$2a$10$JccKjDQpE8kmLUb6T1SUO.pNDrlks6/ZQIyNIyartVYtAZp.rSCUW ,Backend Development Team
+         1 ,subham ,subham@gmail.com ,Data            ,User  ,$2a$10$5C3wjjpd4JnewqLARd6GAeIgSd762.dFIbnxAIzR62M8mv.KSdTwa ,ETL
+         2 ,raja   ,raja@gmail.com   ,Data            ,User  ,$2a$10$5jkTtwU/NmlFGFbKcPQtX.gYG9rhT5d1JyMUGXzPyUrbMUYY7Vzlq ,ML/OPS
+        10 ,Admin  ,admin@gmail.com  ,                ,Admin ,$2a$10$/rT7yIgS77OAlFbVZVYCwudHbvW.rYWZDQ0Dj79eqwsIeBbWLMl5C ,
+        11 ,ritish ,ritish@gmail.com ,Data            ,User  ,$2a$10$pko6ecSItfxKV2l.m4mOT.N3WrBK762ZPe5uzqyun67OPgns/LJiC ,Azure
+        12 ,pardhu ,pardhu@gmail.com ,Data            ,User  ,$2a$10$YwCm.yW9259J2CLZ0m6xU.w6jv9vKr07XNizqcCAEFhP8elb1udTW ,ETL
+        13 ,vijaya ,vijaya@gmail.com ,Data            ,User  ,$2a$10$lmdvBpO55.290/rNRRQVveymj7kfV3nY5EQVNqjO3QbrhEKW3x6n2 ,Azure
+        14 ,chetan ,chetan@gmail.com ,Data            ,User  ,$2a$10$wLlv671ZbVlG.0h6O1kVTufHw3G25/seDlOpRel8JAeFHvP53EGci ,ML/OPS
+        15 ,varsha ,varsha@gmail.com ,Engineering     ,User  ,$2a$10$BGrugi/HgpCZDVCcpfe9zOd.MdWWhDDmSR11AmcRMTMolDa6dbROW ,Backend Development Team
+        16 ,lovish ,lovish@gmail.com ,Engineering     ,User  ,$2a$10$tLJiXwlhsfCKoomZaD/AJ.7svdY2rGbibkh9XaNeEMkHH4dIerxWy ,Backend Development Team
+        18 ,luck   ,luck@gmail.com   ,Human Resources ,User  ,$2a$10$KeSR.uh5IO3Yudzup3tiA.EiJJx3GxYZWmcKwnMUIbBz/oIOFU6CO ,Management Team
+        19 ,readdy ,readdy@gmail.com ,Sales           ,User  ,$2a$10$d0wTEwKXCwuEhNpN5od34Otc3e3X1eZuWl8o.oKxZz/L7Cxs0lWUK ,Outside Sales Team

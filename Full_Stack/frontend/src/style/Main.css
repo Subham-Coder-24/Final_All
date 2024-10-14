@@ -1,0 +1,30 @@
+/* Flexbox for Dropdown Container */
+.dropdown-container-parent{
+    margin-top: 2rem;
+    width: 40%;
+}
+.dropdown-container {
+    display: flex;
+    gap: 20px; /* Spacing between dropdowns */
+    margin-bottom: 20px; /* Space between dropdowns and the dashboard section */
+    margin-bottom: 5rem;
+  }
+  
+  /* Styling for each dropdown item */
+  .dropdown-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Dashboard Section */
+  .dashboard-section {
+    margin-top: 20px;
+  }
+  

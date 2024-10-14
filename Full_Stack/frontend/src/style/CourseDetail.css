@@ -1,0 +1,168 @@
+/* General Course Detail Layout */
+.course-detail {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100%;
+}
+
+/* Header Section with Course Name and Image */
+.course-header {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+.course-info {
+  width: 800px;
+}
+
+.course-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.course-image {
+  width: 320px;
+}
+.course-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Module List Styles */
+.module-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.module-list {
+  border-top: 0.1px solid #cfcfcf;
+}
+
+.module-item {
+  border-bottom: 0.1px solid #cfcfcf;
+  padding: 15px 0;
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.completion-checkbox {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+.green_tick {
+  width: 30px;
+  height: 30px;
+}
+.module-header h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+.module-header:hover {
+  color: #a8a8a8;
+}
+
+.dropdown-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #222;
+}
+
+.module-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  background-color: rgb(236, 236, 236);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  border-radius: 25px;
+  padding: 3px;
+  color: black;
+  background-color: #ebeaea;
+  position: relative; /* Add relative positioning */
+}
+
+.progress-bar {
+  height: 20px;
+  /* background-color: #4caf50; */
+  background-color: #00ba00;
+  border-radius: 25px;
+  transition: width 0.5s;
+  color: black;
+  font-weight: bold;
+}
+
+/* Circle at the end of the progress bar */
+.circle {
+  position: absolute;
+  bottom: 50%; /* Center it vertically */
+  transform: translateY(50%); /* Adjust for perfect vertical centering */
+  width: 20px; /* Circle width */
+  height: 20px; /* Circle height */
+  background-color: #333333; /* Fill color */
+  border-radius: 50%; /* Make it a circle */
+  transition: width 0.5s;
+  /* border: 2px solid #4caf50; Optional: Add border matching the progress color */
+}
+
+.course_details_container p {
+  color: #222;
+  /* margin-top: 10px; */
+}
+
+.course_details_container {
+  margin: 0rem 14rem;
+}
+.timer-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.time {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  transition: transform 0.3s ease-in-out;
+}
+
+.time:hover {
+  transform: scale(1.05);
+  /* border-color: #007BFF; */
+  box-shadow: 2px 2px 12px rgba(0, 123, 255, 0.2);
+}
+.test {
+  margin-top: 1rem;
+}

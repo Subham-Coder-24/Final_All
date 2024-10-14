@@ -1,0 +1,46 @@
+
+ 1. Raw (Fact) Tables
+These tables will store transactional or event-based data, capturing specific actions such as enrollments, feedback, and engagement tracking. The goal is to collect raw, granular data that can be analyzed and aggregated.
+
+- Enrollment:
+  - Represents transactions where employees enroll in courses.
+  - Columns: EnrollDate, QuizScore, EmployeeID, CourseID.
+
+- Engagement:
+  - Represents activities where employees engage with a specific course or module.
+  - Columns: TimeStart, TimeEnd, TimeSpent, IsCompleted, EmployeeID, ModuleID, CourseID.
+
+- Feedback:
+  - Stores feedback data for each course, capturing user ratings and comments.
+  - Columns: Rating, Comment, SubmittedAt, EmployeeID, CourseID.
+
+- Discussion:
+  - Captures employee discussions related to courses, serving as event-based records.
+  - Columns: Text, PostDate, EmployeeID, CourseID.
+
+ 2. Dimension Tables
+Dimension tables contain descriptive or reference data, which provide context to the raw data. These are typically smaller and more stable than fact tables.
+
+- Employee:
+  - Represents employees with details like their name, email, department, and role. This table can serve as a reference to analyze engagement and feedback by employee attributes.
+  - Columns: EmployeeID, Name, Email, Department, Team, Role.
+
+- Course:
+  - Stores details about courses, which will serve as a reference for enrollments, feedback, and engagement.
+  - Columns: CourseID, CourseName, CourseDescription, CreationDate, Author, Image.
+
+- Module:
+  - Represents the course modules that employees interact with.
+  - Columns: ModuleID, ModuleName, ModuleDescription, CourseID.
+
+
+
+# Example for creating a fact table from filtered DataFrames
+
+# Engagement Fact Table
+fact_engagement = filtered_engagements.groupby(['EmployeeID', 'ModuleID', 'CourseID']).agg({
+    'TimeSpent': 'sum',
+    'IsCompleted': 'max'  # Assuming you want the max value of IsCompleted for the fact
+}).reset_index()
+
+which department has count enrolled course engage more time

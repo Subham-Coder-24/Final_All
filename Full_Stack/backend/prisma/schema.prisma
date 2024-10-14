@@ -1,0 +1,114 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model Employee {
+  EmployeeID    Int       @id @default(autoincrement())
+  Name          String
+  Email         String    @unique
+  Department    String?
+  Team          String?
+  Role          String    
+  Password      String
+
+  // Relations
+  Enrollments   Enrollment[]
+  Engagements   Engagement[]
+  Discussions   Discussion[]
+  Feedbacks     Feedback[]  // New relation to Feedback model
+}
+
+model Course {
+  CourseID        Int       @id @default(autoincrement())
+  CourseName      String
+  CourseDescription String
+  CreationDate    DateTime  @default(now())
+  Author          String
+  Image           String? 
+  Quiz            Json?
+
+  // Relations
+  Modules         Module[]
+  Enrollments     Enrollment[]
+  Engagements     Engagement[]
+  Discussions     Discussion[] // New relation to Discussion model
+  Feedbacks       Feedback[]   // New relation to Feedback model
+
+}
+
+model Module {
+  ModuleID        Int       @id @default(autoincrement())
+  ModuleName      String
+  ModuleDescription String
+
+  // Foreign Keys
+  CourseID        Int
+  Course          Course    @relation(fields: [CourseID], references: [CourseID])
+
+  // Relations
+  Engagements     Engagement[]
+}
+
+model Enrollment {
+  EnrollmentID    Int       @id @default(autoincrement())
+  EnrollDate      DateTime
+  QuizScore       Float?    // Nullable score, can be null if not taken
+
+  // Foreign Keys
+  EmployeeID      Int
+  CourseID        Int
+  Employee        Employee  @relation(fields: [EmployeeID], references: [EmployeeID])
+  Course          Course    @relation(fields: [CourseID], references: [CourseID])
+}
+
+model Engagement {
+  EngagementID    Int       @id @default(autoincrement())
+  TimeStart       DateTime
+  TimeEnd         DateTime?
+  TimeSpent       Int       @default(0)// Time spent in minutes or seconds
+  IsCompleted     Boolean   @default(false) // Set default value to false
+
+  // Foreign Keys
+  EmployeeID      Int
+  ModuleID        Int
+  CourseID        Int
+  Employee        Employee  @relation(fields: [EmployeeID], references: [EmployeeID])
+  Module          Module    @relation(fields: [ModuleID], references: [ModuleID])
+  Course          Course    @relation(fields: [CourseID], references: [CourseID])
+}
+
+model Discussion {
+  DiscussionID    Int       @id @default(autoincrement())
+  Text            String
+  PostDate        DateTime  @default(now())
+
+  Parent_Dis_ID   Int?
+  
+   // Foreign Keys
+  EmployeeID      Int
+  CourseID        Int
+  Employee        Employee  @relation(fields: [EmployeeID], references: [EmployeeID])
+  Course          Course    @relation(fields: [CourseID], references: [CourseID])
+}
+
+model Feedback {
+  FeedbackID      Int       @id @default(autoincrement())
+  Rating          Int       @default(0) // Rating given by the user
+  Comment         String?   // Nullable comment field for feedback
+  SubmittedAt     DateTime  @default(now())
+
+  // Foreign Keys
+  EmployeeID      Int
+  CourseID        Int
+
+  // Relations
+  Employee        Employee  @relation(fields: [EmployeeID], references: [EmployeeID])
+  Course          Course    @relation(fields: [CourseID], references: [CourseID])
+}

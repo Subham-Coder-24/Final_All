@@ -1,0 +1,86 @@
+.enroll_main {
+  font-family: Arial, sans-serif;
+}
+.enroll_main h1 {
+  margin: 3rem 0rem;
+}
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-item {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.course-item:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-details {
+  margin-top: 20px;
+  /* padding: 20px; */
+  border-radius: 8px;
+}
+
+.course-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.course-details th,
+.course-details td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.course-details th {
+  background-color: #0c0a0a;
+}
+
+.course-details td {
+  text-align: center;
+}
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.chart-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.score-details {
+  flex: 0 0 250px; /* Fixed width for the card */
+  padding: 20px;
+  background-color: #cfcece;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border-radius: 40%; */
+  text-align: center;
+  padding: 60px;
+}
+
+.score-details h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.score-card {
+  margin-bottom: 2rem;
+  text-align: center;
+}

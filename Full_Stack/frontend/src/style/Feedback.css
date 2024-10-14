@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin: 1rem 0rem;
+}
+.star-rating {
+  display: flex;
+  direction: row;
+}
+
+.star {
+  font-size: 2rem;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #f69c08;
+}
+
+input[type="radio"] {
+  display: none;
+}
